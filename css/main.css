@@ -1,0 +1,154 @@
+@font-face {
+    font-family: "garden";
+    src: url(../fonts/GardensC_03_1.otf); 
+}
+body{
+    margin: 0px;
+}
+.create{
+    font-family: garden;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 40px;
+}
+.box{
+    background-color: rgb(136, 25, 25);
+    position:fixed;
+    left:0;
+    top:0;
+    width:50%;
+    height:100%;
+}
+.someInput{
+    border: none;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    background-color: transparent;
+    color: black;
+    outline: none;
+    font-family: garden;
+    font-size: 20px;
+    margin: 10px 20px;
+}
+.enter{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.crBut{
+    grid-column: 1/3;
+    background-color: black;
+    color: rgb(136, 25, 25);
+    margin: 10px 20px;
+    border-radius: 35px;
+    border-width: 0px;
+    height: 40px;
+    font-family: garden;
+    font-size: 20px;
+}
+.list{
+    position:fixed;
+    right:0;
+    top:0;
+    width:50%;
+    height:100%;
+    background:black;
+    color:#fff;
+    overflow:auto;
+    font-size: 40px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+  
+.modal-content {
+    color: rgb(20, 20, 20);
+    background-color: rgb(136, 25, 25);
+    height: 400px;
+    width: 600px;
+    border-style: solid;
+    border-color: rgb(20, 20, 20);
+    border-width: 6px;
+    border-radius: 35px;
+    display: flex;              
+    flex-direction: column;     
+    justify-content: space-between; 
+}
+  
+.close {
+    background-color: rgb(20, 20, 20);
+    color: rgb(136, 25, 25);
+    border-width: 0px;
+    width: 600px;
+    height: 100px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    font-family: garden;
+    font-size: 40px;
+    cursor: pointer;
+}
+.div123{
+    display: flex;
+    justify-content: space-between;
+    border-left: 2px solid rgb(136, 25, 25);
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 10px;
+    font-family: garden;
+    color: rgb(136, 25, 25);
+    position: relative;
+    z-index: 1;
+}
+.div123:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    background: rgb(136, 25, 25);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.5s;
+    z-index: 0;
+}
+.div123:hover:before {
+    transform: scaleX(1);
+}
+
+.div123:hover{
+    left: 0px;
+}
+.div123:hover .left {
+    color: black; 
+}
+.div123:hover a {
+    color: black; 
+}
+.left, .right { 
+    z-index: 2; 
+    position: relative; 
+}
+a{
+    color: rgb(136, 25, 25);
+    text-decoration: none;
+}
+.n, .s, .pn, .a {
+    font-family: garden;
+    color: rgb(20, 20, 20);
+    font-size: 40px;
+    margin-left: 30px;
+}
+.n{
+    margin-top: 30px;
+}
